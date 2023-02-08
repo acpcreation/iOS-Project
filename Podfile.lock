@@ -1,46 +1,77 @@
 PODS:
-  - Alamofire (4.9.1)
-  - boost (1.51.0):
-    - boost/graph-includes (= 1.51.0)
-    - boost/math-includes (= 1.51.0)
-    - boost/numeric-includes (= 1.51.0)
-    - boost/pointer_cast-includes (= 1.51.0)
-    - boost/preprocessor-includes (= 1.51.0)
-    - boost/shared_ptr-includes (= 1.51.0)
-    - boost/string_algorithms-includes (= 1.51.0)
-  - boost/graph-includes (1.51.0)
-  - boost/math-includes (1.51.0)
-  - boost/numeric-includes (1.51.0)
-  - boost/pointer_cast-includes (1.51.0)
-  - boost/preprocessor-includes (1.51.0)
-  - boost/shared_ptr-includes (1.51.0)
-  - boost/string_algorithms-includes (1.51.0)
-  - libpng (1.6.35)
-  - lottie-ios (3.2.3)
-  - Protobuf (3.21.12)
+  - ADMobGenAdapter (1.5.2):
+    - ADMobGenFoundation
+  - ADMobGenFoundation (0.7.2)
+  - ADMobGenGDT (4.10.0):
+    - ADMobGenAdapter
+    - ADMobGenFoundation
+    - GDTMobSDK (= 4.10.2)
+  - GDTMobSDK (4.10.2):
+    - GDTMobSDK/GDTMobSDK (= 4.10.2)
+  - GDTMobSDK/GDTMobSDK (4.10.2)
+  - YogaKit (1.2.0)
+  - libpng (1.6.18)
+  - GethDevelop (1.8.17)
+  - GRMustache.swift (0.11.0)
+  - GzipSwift (5.0.0)
+  - Just (0.7.1)
+  - PromiseKit (6.8.4):
+    - PromiseKit/CorePromise (= 6.8.4)
+    - PromiseKit/Foundation (= 6.8.4)
+    - PromiseKit/UIKit (= 6.8.4)
+  - PromiseKit/CorePromise (6.8.4)
+  - PromiseKit/Foundation (6.8.4):
+    - PromiseKit/CorePromise
+  - Sparkle (1.21.3)
+  - Silica (0.1.5)
+  - SwiftyBeaver (1.4.2)
+  - Reachability (3.1.0)
+  - fmt (7.1.3)
+  - boost (1.51.0)
+  - Default (3.0.0):
+  - lottie-ios (3.4.4)
+  - libwebp (1.0.0):
+  - Protobuf (3.21.5)
+  - Folly (= 2016.09.26.00 )
+  - nanopb (= 0.3.8)
 
 DEPENDENCIES:
-  - Alamofire
-  - boost (~> 1.51.0)
-  - libpng
-  - lottie-ios
-  - Protobuf (~> 3.21.12)
+  - ADMobGenGDT (from `../`)
+  - GRMustache.swift (from `https://github.com/iina/GRMustache.swift`)
+  - GzipSwift
+  - Just (from `https://github.com/iina/Just`, branch `swift-5`)
+  - PromiseKit
+  - Sparkle
+  - Silica (from `https://github.com/ianyh/Silica.git`, tag `0.1.5`)
+
 
 SPEC REPOS:
-  http://localhost:8081/repository/cocoapods-proxy/:
-    - Alamofire
-    - boost
-    - libpng
-    - lottie-ios
-    - Protobuf
+  https://github.com/cocoapods/specs.git:
+    - ADMobGenAdapter
+    - ADMobGenFoundation
+    - GDTMobSDK
+    - GzipSwift
+    - PromiseKit
+    - Sparkle
+    - SwiftyBeaver
+
+EXTERNAL SOURCES:
+  ADMobGenGDT:
+    :path: "../"
+  
+  Silica:
+    :git: https://github.com/ianyh/Silica.git
+    :tag: 0.1.5
 
 SPEC CHECKSUMS:
-  Alamofire: 106a65f4de3d4210e74b6c26bea9a3e10efc59dc
-  boost: 77c2af67ccc6eecc46286a1a4772cc422c9f310e
-  libpng: 55af526e36f6fe7cfe39554cefb70d01299e9c1d
-  lottie-ios: 6c2da2ef923d6a6c3ea4061b06ab330a3fc9058a
-  Protobuf: 5aac87af08ae10246b066316e731f5e0fd52845a
+  ADMobGenAdapter: 5ab3531d5659c96812e6da545c1ec160b9991a2e
+  ADMobGenFoundation: de6e4f7b09df256a347878d0f0e0438c1feac94e
+  ADMobGenGDT: 77d18f682136e9e90fc9e5dfb0fc57637d5441d7
+  GDTMobSDK: 6fde44a4f80c36051d5d879df8bb280034c31431
+  Silica: 3b5a774469476ef84fe9d96a63bfe09908654e50
+  Sparkle: 06ea33170007c5937ee54da481b4481af98fac79
+  SwiftyBeaver: 91057725648ee4980308f1650af077d04b3654a0
 
-PODFILE CHECKSUM: f39ab5cf6733c9714faa200c74471d2e1bf79f00
+PODFILE CHECKSUM: 441850ec31e67c6ea8241a64c55657d490e51d66
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.7.0.beta.2
